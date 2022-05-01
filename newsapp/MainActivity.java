@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
         final api apiService = RetrofitClient.getClient().create(api.class);
 
-        Call<model> call = apiService.getpost("techcrunch", "d51fdfc3bce14675926d2aef6b126c53");
+        Call<model> call = apiService.getpost("techcrunch", "---put your news api---");
 
         call.enqueue(new Callback<model>() {
             @Override
